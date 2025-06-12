@@ -1,0 +1,166 @@
+/* style.css */
+
+/* Corps de la page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* En-tête */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navigation */
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navigation a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Sections principales */
+main {
+    padding: 20px;
+}
+/* Style spécifique à la section accueil */
+#accueil p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Lien dans le texte */
+#accueil a {
+    color: #000;
+    text-decoration: underline;
+}
+
+#accueil a:hover {
+    color: #555;
+}
+
+
+.contenu {
+    margin-bottom: 40px;
+}
+.contenu ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.contenu li {
+    margin-bottom: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+
+/* Section Recherche */
+#recherche form {
+    margin-top: 15px;
+}
+
+#recherche fieldset {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#recherche legend {
+    font-weight: bold;
+}
+
+#recherche label {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+#recherche input[type="text"] {
+    padding: 8px;
+    width: 60%;
+    margin-top: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+#recherche button, .btn {
+    padding: 8px 15px;
+    margin-left: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#recherche button:hover, .btn:hover {
+    background-color: #333;
+}
+
+
+
+
+
+
+/* Pied de page */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Résultats de recherche */
+.resultat {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resultat h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
