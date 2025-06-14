@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 12 juin 2025 à 20:04
+-- Généré le : sam. 14 juin 2025 à 16:32
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.0.30
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `livres` (
-  `Id` int(11) NOT NULL COMMENT 'identifiant du livre',
+  `id` int(11) NOT NULL COMMENT 'identifiant du livre',
   `titre` varchar(100) NOT NULL COMMENT 'Titre du livre',
   `auteur` varchar(100) NOT NULL COMMENT 'Auteur du livre',
   `description` text NOT NULL COMMENT 'description du livre',
@@ -40,7 +40,7 @@ CREATE TABLE `livres` (
 -- Déchargement des données de la table `livres`
 --
 
-INSERT INTO `livres` (`Id`, `titre`, `auteur`, `description`, `maison_edition`, `nombre_exemplaire`) VALUES
+INSERT INTO `livres` (`id`, `titre`, `auteur`, `description`, `maison_edition`, `nombre_exemplaire`) VALUES
 (1010, 'Le monde s\'effondre', 'Chinua Achebe', 'Dans le village igbo d\'Umuofia, Okonkwo est un homme respecté pour sa force et son courage. Cependant, l\'arrivée des colons européens et des missionnaires bouleverse l\'ordre établi. Ce roman poignant explore la collision entre tradition africaine et modernité imposée par l\'Occident.', 'Présence Africaine', 10),
 (1011, 'La Flèche de Dieu', 'Chinua Achebe', 'Ezeulu, prêtre suprême d\'une divinité igbo, se retrouve tiraillé entre son rôle sacré et l\'arrivée de nouvelles croyances religieuses et politiques. Achebe explore ici les tensions entre autorité spirituelle et colonialisme dans une société en mutation.', 'Présence Africaine', 7),
 (1012, 'L\'Enfant noir', 'Camara Laye', 'Récit autobiographique d\'un jeune garçon guinéen, ce roman évoque avec émotion les souvenirs d\'enfance, les rites traditionnels, et le passage à l\'âge adulte, entre valeurs africaines et éducation occidentale.', 'Plon', 12),
@@ -52,7 +52,20 @@ INSERT INTO `livres` (`Id`, `titre`, `auteur`, `description`, `maison_edition`, 
 (1018, 'Notre-Dame de Paris', 'Victor Hugo', 'Plongé dans le Paris médiéval, ce roman tragique met en scène Quasimodo, Esméralda et le juge Frollo autour de la cathédrale Notre-Dame. À travers leur drame, Hugo critique la société et exalte le génie architectural gothique.', 'Gallimard', 6),
 (1019, 'Germinal', 'Emile Zola', 'Chef-d’œuvre du naturalisme, ce roman dépeint avec intensité la vie des mineurs du nord de la France et leur lutte contre l\'injustice sociale. Étienne Lantier incarne la révolte ouvrière face à la misère et à l\'exploitation.', 'Le Livre de Poche', 10),
 (1020, 'L\'Assommoir', 'Emile Zola', 'À travers le destin tragique de Gervaise, blanchisseuse à Paris, Zola montre les ravages de l\'alcoolisme, de la pauvreté et de l\'exclusion dans les milieux populaires. Un roman dur, mais profondément humain.', 'Flammarion', 7),
-(1021, 'La Bête humaine', 'Emile Zola', 'Dans un univers ferroviaire troublé, Zola explore les instincts violents, les passions destructrices et les hérédités criminelles. Ce thriller psychologique interroge la nature humaine dans sa part la plus obscure.', 'Flammarion', 5);
+(1021, 'La Bête humaine', 'Emile Zola', 'Dans un univers ferroviaire troublé, Zola explore les instincts violents, les passions destructrices et les hérédités criminelles. Ce thriller psychologique interroge la nature humaine dans sa part la plus obscure.', 'Flammarion', 5),
+(1022, 'Les Misérables', 'Victor Hugo', 'Un roman historique mêlé de romance, de misère et de justice sociale.', 'Gallimard', 10),
+(1023, 'Madame Bovary', 'Gustave Flaubert', 'Portrait d\'une femme déçue par la vie provinciale et le mariage.', 'Le Livre de Poche', 8),
+(1024, 'L’Étranger', 'Albert Camus', 'Un roman existentialiste traitant de l\'absurde.', 'Folio', 12),
+(1025, 'Germinal', 'Émile Zola', 'Un roman naturaliste sur le monde ouvrier et la révolte.', 'Fayard', 6),
+(1026, 'À la recherche du temps perdu', 'Marcel Proust', 'Une œuvre monumentale sur le temps, la mémoire et la société.', 'Gallimard', 5),
+(1027, 'La Nausée', 'Jean-Paul Sartre', 'Une œuvre philosophique sur la liberté et la responsabilité.', 'Gallimard', 9),
+(1028, 'Tartuffe', 'Molière', 'Comédie classique sur les hypocrites religieux.', 'Larousse', 15),
+(1029, 'Le Père Goriot', 'Honoré de Balzac', 'Portrait d\'un jeune ambitieux dans une société impitoyable.', 'Hachette', 7),
+(1030, 'Le Petit Prince', 'Antoine de Saint-Exupéry', 'Conte poétique et philosophique pour petits et grands.', 'Gallimard', 20),
+(1031, 'Bonjour Tristesse', 'Françoise Sagan', 'Premier roman d\'une jeune auteure, sur les tourments de l\'adolescence.', 'Julliard', 6),
+(1032, 'Claudine à l\'école', 'Colette', 'Une jeune fille en quête de liberté.', 'Folio', 4),
+(1033, 'Le Tour du monde en 80 jours', 'Jules Verne', 'Un roman d\'aventure scientifique autour du monde.', 'Hetzel', 11),
+(1034, 'La Vie devant soi', 'Romain Gary', 'Une histoire touchante d\'amour entre un enfant et sa nourrice.', 'Mercure de France', 5);
 
 --
 -- Index pour les tables déchargées
@@ -62,7 +75,7 @@ INSERT INTO `livres` (`Id`, `titre`, `auteur`, `description`, `maison_edition`, 
 -- Index pour la table `livres`
 --
 ALTER TABLE `livres`
-  ADD PRIMARY KEY (`Id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
@@ -72,7 +85,7 @@ ALTER TABLE `livres`
 -- AUTO_INCREMENT pour la table `livres`
 --
 ALTER TABLE `livres`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'identifiant du livre', AUTO_INCREMENT=1022;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'identifiant du livre', AUTO_INCREMENT=1035;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

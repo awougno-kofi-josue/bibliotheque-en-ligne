@@ -106,6 +106,25 @@ if ($count > 0) {
     ?>
   
     <div>⚠️ Ce livre est déjà dans votre liste de lecture.</div>
+    <div id="message" style="display:none;">📚 Vous avez surement lu ce bouquin déjà .</div>
+
+
+    <style>
+        #message {
+            font-size: 20px;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 2px solid black;
+            display: inline-block;
+            border-radius: 8px;
+        }
+    </style>
+    <script>
+            document.getElementById("message").style.display = "block";
+            setTimeout(() => {
+                document.getElementById("message").style.display = "none";
+            }, 4000);
+    </script>
     <a href="wishlist.php" class="btn">Voir votre liste de lecture</a>
 
 
@@ -126,7 +145,16 @@ if ($count > 0) {
     <main class="contenu">
     <?php
     if (mysqli_query($conn, $insert_sql)) { ?>
-        <div>✅ Livre ajouté à votre liste de lecture avec succès.</div>
+        <div>✅ ✅ ✅</div>
+         <div id="msg" style="display:none;">📚 Livre ajouté à votre liste de lecture avec succès. <br>
+        Bon lecture à vous</div>
+
+            <script>
+            document.getElementById("msg").style.display = "block";
+            setTimeout(() => {
+                document.getElementById("msg").style.display = "none";
+            }, 4000);
+            </script>
         <a href="wishlist.php" class="btn">Voir votre liste de lecture</a>
     <?php
     } else { ?>

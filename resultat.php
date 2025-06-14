@@ -14,7 +14,8 @@ if (!$conn) {
 }
 
 $motCle = "%" . $_GET['recherche'] . "%";
-$filtre = $_GET['filtre'] ?? 'titre'; // valeur par défaut : titre
+$filtre = $_GET['filtre'] ?? 'auteur'; // valeur par défaut : auteur
+
 
 
 $sql = "";
@@ -86,7 +87,7 @@ if ($stmt = mysqli_prepare($conn, $sql)) {
             <div class='resultat'>
                 <h3><?php echo htmlspecialchars($row['titre']); ?></h3>
 
-                <padding><strong>Auteur :</strong> <?php echo htmlspecialchars($row['auteur']); ?></p>
+                <h3><strong>Auteur :</strong> <?php echo htmlspecialchars($row['auteur']); ?></h3>
 
                 <a href="details.php?id=<?php echo $row['id']; ?>" class="btn">Voir détails</a>
             </div>

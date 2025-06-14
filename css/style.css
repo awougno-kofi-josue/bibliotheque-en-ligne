@@ -161,3 +161,25 @@ footer {
     font-weight: bold;
 
 }
+
+/* responsive */
+@media screen and (max-width: 600px) {
+    .navigation ul li {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .contenu {
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}

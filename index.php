@@ -18,10 +18,7 @@
                 <li><a href="#recherche">Recherche</a></li>
                 <li><a href="wishlist.php">Ma Liste de Lecture</a></li>
             </ul>
-            <div class="theme">
-                <button onclick="themeJour()">Jour</button>
-                <button onclick="themeNuit()">Nuit</button>
-            </div>
+           
         </nav>
     </header>
     <main>

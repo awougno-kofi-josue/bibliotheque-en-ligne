@@ -65,6 +65,7 @@ $row = mysqli_fetch_array($result);
                 <input type="hidden" name="id_livre" value="<?php echo htmlspecialchars($row['id']); ?>">
                 <button type="submit" class="btn" onclick="confirmerAjout()">Ajouter à ma liste</button>
             </form>
+           
         <script src="script.js"></script>
     </main>
 
