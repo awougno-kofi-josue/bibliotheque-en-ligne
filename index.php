@@ -9,14 +9,19 @@
 </head>
 <body>
     <header>
+
         <h1>Bienvenue à la Bibliothèque - Ma culture</h1>
         <nav class="navigation">
             <ul>
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.php">Accueil</a></li>
                 <li><a href="#collections">Collections</a></li>
                 <li><a href="#recherche">Recherche</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="wishlist.php">Ma Liste de Lecture</a></li>
             </ul>
+            <div class="theme">
+                <button onclick="themeJour()">Jour</button>
+                <button onclick="themeNuit()">Nuit</button>
+            </div>
         </nav>
     </header>
     <main>
@@ -37,6 +42,7 @@
     <p>
         Nous vous invitons à explorer nos collections et à profiter de nos services.
     </p>
+    <p>S'inscrire sur notre site pour pouvoir créer une liste de lecture et y ajouter des livres.</p>
 </section>
 
         <section id="collections" class="contenu">
